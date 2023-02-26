@@ -4,7 +4,7 @@ public class FluxoComError {
         System.out.println("Ini do main");
         try{
             metodo1();
-        } catch(ArithmeticException | NullPointerException ex) {
+        } catch(Exception ex) { // Catch genérico/polimórfico
             String msg = ex.getMessage();
             System.out.println("Exception " + msg);
             ex.printStackTrace();

@@ -1,7 +1,7 @@
 
 //Se extendemos da RuntimeException, temos uma exceção "unchecked" pelo compilador
 //Se extendemos da Exception, temos uma checked e o compilador te obriga a colocar um throws na assinatura do método ou tratar a exception com um try/catch
-public class MinhaExcecao extends Exception{
+public class MinhaExcecao extends Exception{ //Checked pois extende de Exception
     public MinhaExcecao(String msg){
         super(msg);
     }
